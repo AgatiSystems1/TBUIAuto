@@ -7,12 +7,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import com.tb.qa.util.ScreenShot;
 import com.tb.qa.util.TestUtil;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+
 public class TestBase {
 public static WebDriver driver;
+ScreenShot getScreen=new ScreenShot();
+com.tb.qa.util.logFiles logs=new com.tb.qa.util.logFiles();
+String logLocation=".//test-output";
 	
 	public static void initialization(){
 		String browserName = "Chrome";
